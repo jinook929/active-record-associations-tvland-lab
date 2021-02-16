@@ -50,7 +50,8 @@ describe Show do
     expect(dramedy.name).to eq("Gilmore Girls")
   end
 
-   it "can build an associated network" do
+  # binding.pry
+  it "can build an associated network" do
     show.build_network(:call_letters => "NBC")
     expect(show.network.call_letters).to eq("NBC")
   end
